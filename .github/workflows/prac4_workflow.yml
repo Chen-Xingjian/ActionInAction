@@ -1,15 +1,6 @@
 name: prac4_workflow
 
-on:
-  push:
-    branches:
-      - 'main'
-      - 'release/**'
-    paths:
-      - 'doc/**'
-  schedule:
-    # Runs at every 15th minute
-    - cron: '*/15 * * * *'
+on: workflow_dispatch
     
 jobs:
   job_1:
